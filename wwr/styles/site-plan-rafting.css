@@ -9,7 +9,7 @@ Fonts are separated by a & */
   --primary-color: #36adb3   ;
   --secondary-color: #728c48 ;
   --accent1-color: #db4430;
-  --accent2-color: white;
+  --accent2-color: white:
 
   /* change the values below to your chosen font(s) */
   --heading-font: Barlow;
