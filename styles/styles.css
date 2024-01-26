@@ -1,0 +1,25 @@
+body {
+    background-color: aquamarine;
+}
+
+/* This is targeting a class in html 
+Classes are classified by . 
+id's are classified by # 
+*/
+.nav_link {
+    padding: 10px;
+    color: black;
+    font-size: 1.3em;
+}
+
+img { 
+    width: 300px;
+}
+
+#main_title {
+    font-size: 4em;
+}
+#sub_title {
+    color: red;
+    
+}
