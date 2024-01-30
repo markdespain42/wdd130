@@ -1,25 +1,77 @@
+/* * {
+    border: 2px solid red;
+
+} */
+
+
+
 body {
-    background-color: aquamarine;
+    background-color: steelblue;
+    padding: 0;
+    margin: 0;
+
 }
 
 /* This is targeting a class in html 
 Classes are classified by . 
 id's are classified by # 
 */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: steelblue;
+}
+
 .nav_link {
     padding: 10px;
     color: black;
     font-size: 1.3em;
+    text-decoration: none;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 img { 
-    width: 300px;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    
+}
+a {
+    color: black
+}
+nav a:hover {
+    color: purple;
+    background-color: white;
+
 }
 
 #main_title {
     font-size: 4em;
+    text-align: center;
+
+}
+p {
+    text-align: center;
+
 }
 #sub_title {
     color: red;
+    font-size: 2em;
+    text-align: center;
     
+}
+
+footer {
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: steelblue;
+}
+footer a{
+    color: white;
+    text-decoration: none;
 }
