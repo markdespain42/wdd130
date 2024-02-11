@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Merriweather:ital,wght@1,300&display=swap');
+
+
 body {
     background-color: steelblue;
+    font-family: 'Merriweather', 'Bradley Hand', sans-serif;
+    font-size: 22px;
 }
 
 #content {
@@ -28,30 +33,41 @@ nav a:hover {
     color:azure;
 }
 .book, .join {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
     background-color: black;
     color: white;
     text-align: center;
     text-decoration: none;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: purple;
     color: black;
+}
+.card-img {
+    border: 10px solid black;
 }
 .msg {
     background-color: steelblue;
     color: black;
 }
 footer {
+    margin-top: 200px;
     background-color: rgb(232, 167, 77);
     color: black;
     font-size: 1.2em;
 }
 nav a { 
+    padding: 35px;
     text-align: center;
     color: black;
     text-decoration: none;
 }
 .home-title { 
+    font-size: 2em;
+    margin-top: 10px;
     color: black;
 }
 footer a {
@@ -68,4 +84,34 @@ footer a:hover {
 }
 .icon {
     width: 80px;
+}
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.msg {
+    background-color: aliceblue;
+    line-height: 1.5em;
+    padding: 35px;
+}
+h2 {
+    margin: 0;
+}
+footer .social img {
+    padding-top: 15px;
+}
+nav a {
+    padding: 35px;
+}
+.icon {
+    padding-top: 10px;
+}
+#logo_link {
+    padding-top: 5px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+main section img {
+    box-sizing: border-box;
 }

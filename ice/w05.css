@@ -1,0 +1,18 @@
+body {
+    background-color: gray;
+}
+#content {
+    max-width: 1600px;
+}
+.images {
+    box-sizing: border-box;
+    border: 10px solid rgb(100, 93, 84);
+    border-radius: 200px;
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+main {
+    text-align: center;
+}
