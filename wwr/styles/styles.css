@@ -24,7 +24,16 @@ nav {
     justify-content: center;
     background-color: steelblue;
 }
+main { 
+    background-color: white;
+    padding: 40px;
+    border: 5px solid brown;
+    border-top: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 
+}
 .nav_link {
     padding: 10px;
     color: black;
@@ -42,7 +51,15 @@ img {
     width: 40%;
     display: block;
     margin: 0 auto;
-    padding-bottom: 4%;
+    margin-bottom: 4%;
+    grid-column: 1/2;
+    grid-row: 2/5;
+    box-shadow: 5px 5px 10px black;
+    transition: transform .5fe;
+}
+img:hover {
+    opacity: .6;
+    transform: scale(1.1);
 }
 a {
     color: black
@@ -91,4 +108,9 @@ footer {
 footer a{
     color: white;
     text-decoration: none;
+}
+@media screen and (max-width: 1600px) {
+    main {
+        display:block;
+    }
 }
