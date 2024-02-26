@@ -30,8 +30,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-
 }
+
+
 .nav_link {
     padding: 10px;
     color: black;
