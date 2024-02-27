@@ -25,14 +25,14 @@ h4 {
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
-#hero-img {
+#hero_img {
     width: 100%;
-    z-index: -1;
+    grid-column: 1/4;
+    grid-row: 1/2;
 }
-#hero-box {
+#hero_box {
     grid-column: 1/4;
     grid-row: 1/3;
-    z-index: -1;
 }
 .button_box {
     text-align: center;
