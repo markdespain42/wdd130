@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/site.css">
+    <title>Writing Path - FAQ Page</title>
+</head>
+<body>
+<div id="content">
+<header>
+    <a id="logo_link" href="site.html">
+        <img class="logo" src="images/faqs-concept-illustration_114360-5185.jpg" alt="faq logo">
+    </a>
+    <nav>
+        <a href="site.html">Home</a>
+        <a href="personal-journey.html">Personal Journey</a>
+        <a href="faq-site.html">FAQ</a>
+        <a href="site-plan.html">Site Plan</a>
+        <a href="contactus-personal.html">Contact Us</a>
+    </nav>
+</header>
+<main>
+    <h1>FAQ Page</h1>
+    <p>This page will be deticated towards helping everyone understand writing and it's importance in our daily lives.</p>
+
+    <h2>Question - </h2>
+    <p>Why is writing important?</p>
+    <h3>Answer - </h3>
+    <p>Writing makes up almost everything that we do as a human species. It is the way that we can communicate and talk with each other. Without it, our ideas, thoughts, and imaginations would be void.</p>
+
+    <h4>Question - </h4>
+    <p>How can I get into writing myself?</p>
+    <h5>Answer - </h5>
+    <p>A way that everyone can get into writing is through an event and website called NaNoWriMo. It is a website with many resources and simple ways that everyone can get into writing themselves. Checking them out would help even those people that are wanting to improve their craft.</p>
+
+    <h6>Did we miss a question? Ask it here: </h6>
+    <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input required type="email" id="mail" name="user_email" placeholder="Your Email @here.com"/>
+          </li>
+          <li>
+            <label for="msg">Question:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+        <img class="question" src="images/website-faq-section-user-help-desk-customer-support-frequently-asked-questions-problem-solution.jpg">
+</main>
+<footer>
+    <p>Voltar Studios &copy; 2024 = Mark Despain</p>
+    <p><a href="site-plan.html">Site Plan</a></p>
+    <p><a href="contactus-personal.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon" >
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</footer>
+</div>
+</body>
+</html>
