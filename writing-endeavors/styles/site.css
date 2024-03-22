@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Merriweather:ital,wght@1,300&display=swap");
+
+body {
+    font-family: "Merriweather", "Bradley Hand", sans-serif;
+    font-size: 22px;
+    background-color: steelblue;
+    padding: 0;
+    margin: 0;
+}
+
+/*CSS for all*/
+header {
+    text-align: center;
+    background-color: rgb(0, 106, 255);
+}
+.logo {
+    width: 10%;
+    box-shadow: 5px 5px 10px black;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}                 
+.nav-link a{      
+    color: black;
+    font-size: 1.3em;         
+    text-decoration: none;
+}
+.nav-link a:hover {
+    color: darkred;
+}
+.nav-link {
+    padding: 10px;
+    
+}
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: black;
+    font-size: 1.1em;
+    background-color: tan;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    color: darkred;
+}
+
+
+
+/*Site CSS*/
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.first-img {
+    width: 25%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.purpose-home {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+}
+.writing-resources {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    margin: 0 auto;
+}
+.personal-journey-home {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    margin: 0 auto;
+}
+.faq-home {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    margin: 0 auto;
+}
+.second-img {
+    width: 20%;
+    
+}
