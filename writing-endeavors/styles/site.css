@@ -162,6 +162,34 @@ h4 {
     
 }
 
+/*Personal-journey CSS*/
+.personal-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.personal-journey {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    text-align: center;
+}
+.works {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.ideas {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+.mountain {
+    width: 100%;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.ideas-support {
+    text-align: center;
+}
+
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
     .header a {
